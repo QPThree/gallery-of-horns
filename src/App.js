@@ -1,10 +1,20 @@
 import React from 'react';
 import './App.css';
+import Header from './Header';
+import Main from './Main';
+import Footer from './Footer';
 
 class App extends React.Component {
-  render(){
+  render() {
     return (
-      <h1>Go Pats</h1>
+      <>
+        <Header />
+        <Main 
+        title = 'Horned Beasts!'
+        />
+        <Footer 
+        author = 'Quentin Young'/>
+      </>
     )
   }
 }
