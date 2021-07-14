@@ -1,8 +1,15 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 
 
 
 class HornedBeast extends React.Component {
+  // constructor(props){
+  //   super(props);
+  //   this.state = {
+  //     horns: 
+  //   }
+  // }
   render() {
     return (
       <>
