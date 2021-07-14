@@ -14,9 +14,23 @@ Estimate of time needed to complete: 45 minutes
 
 Start time: 8:45pm 13JUL2021
 
-Finish time: _____
+Finish time: 9:02pm 13JUL2021
 
-Actual time needed to complete: _____
+Actual time needed to complete: 17 min
+
+---
+
+Number and name of feature: Feature 2 - Allow users to vote for their favorite beast
+
+Estimate of time needed to complete: 60 minutes
+
+Start time: 9:04pm 13JUL2021
+
+Finish time: 
+
+Actual time needed to complete: 
+
+
 ### Any Links you used as reference
 ### Reflections and Comments
 Consider including the answers to your daily journal and submission questions here
