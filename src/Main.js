@@ -1,4 +1,5 @@
 import React from 'react';
+import CardColumns from 'react-bootstrap/CardColumns';
 import Data from './data.json';
 import HornedBeast from './HornedBeast';
 import './Main.css';
@@ -23,7 +24,9 @@ class Main extends React.Component{
     return (
       <main>
         <h1> {this.props.title}</h1>
+        <CardColumns>
           {elementsArr}
+        </CardColumns>
       </main>
     )
   }
