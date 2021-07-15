@@ -1,11 +1,11 @@
 # LAB - 01
+
 ## Gallery of Horns
+
 [Site Deployed Here](https://infallible-einstein-4e0d5d.netlify.app/)
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+Gallery of Horns is my first react app. It is currently deployed at the site above. The gallery displays horned creatures to the user.  The user can then select their favorites with the favorite button located on each beasts card.
 
 ### Author: Quentin P Young III
-
-### Links and Resources
 
 ### Features
 Number and name of feature: Feature 1 - Display Images
@@ -38,13 +38,16 @@ Estimate of time needed to complete: 120 minutes
 
 Start time: 9:11pm 13JUL2021
 
-Finish time: 
+Finish time: 9:06pm 14JUL2021
 
-Actual time needed to complete: 
+Actual time needed to complete: 2 hours (Ongoing. More can be done.)
 
 ---
 
 ### Any Links you used as reference
 ### Reflections and Comments
-Consider including the answers to your daily journal and submission questions here
-This is also a good place to reflect on the tools and resources used and learned
+
+* Struggling with bootstrap.
+
+* Need to rememebr reacts strength is in it's components. Don't try to write all code in one file. 
+
