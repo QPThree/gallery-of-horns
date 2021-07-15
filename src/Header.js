@@ -1,10 +1,11 @@
 import React from 'react';
+import NavigationBar from './NavigationBar.js';
 
 class Header extends React.Component {
   render() {
     return (
       <header>
-        <h1>Horned Beasts and Mystical Components!</h1>
+        <NavigationBar />
       </header>
     )
   }
