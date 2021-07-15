@@ -7,7 +7,6 @@
 --orange-peel: #ffa62bff; */
 h1{
   font-size: 4em;
-  font-weight: bolder;
 }
 .navh1{
   font-family: 'Zen Loop', cursive;
@@ -20,6 +19,10 @@ h1{
 }
 main {
   background-color: #82C0CC;
+}
+.mainh2{
+  font-family: 'Encode Sans SC', sans-serif;
+  font-weight: bolder;
 }
 
 img {
