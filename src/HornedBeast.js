@@ -26,7 +26,7 @@ class HornedBeast extends React.Component {
         <Image variant = "top" src={this.props.imgUrl} title={this.props.title} alt = 'Alt text'/>
         <Card.Body>
           <Card.Title>{ this.props.title }</Card.Title>
-          <p>{'💛' + this.state.favorites}</p>
+          <p>{'💛' + (this.state.favorites ? this.state.favorites : '')}</p>
           <Button variant="outline-warning" onClick = {this.addFavorite}>Favorite</Button>
           <Card.Text> { this.props.description }</Card.Text>
         </Card.Body>
