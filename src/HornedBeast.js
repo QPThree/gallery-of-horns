@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Image from 'react-bootstrap/Image'
+import Image from 'react-bootstrap/Image';
 import './HornedBeast.css';
 
 
@@ -22,12 +22,14 @@ class HornedBeast extends React.Component {
   }
   render() {
     return (
-      <Card border = "dark">
-        <Image variant = "top" src={this.props.imgUrl} title={this.props.title} alt = 'Alt text'/>
+      <Card border = "dark" bg="red" className = "card">
+        <Image variant = "top" src={this.props.imgUrl} title={this.props.title} alt = {this.props.title}/>
         <Card.Body>
-          <Card.Title>{ this.props.title }</Card.Title>
-          <p>{'💛' + (this.state.favorites ? this.state.favorites : '')}</p>
+          <Card.Title className = "cardTitle">{ this.props.title }</Card.Title>
+          
+          <p>{(this.state.favorites ? '💛'+this.state.favorites : '')}</p>
           <Button variant="outline-warning" onClick = {this.addFavorite}>Favorite</Button>
+          
           <Card.Text> { this.props.description }</Card.Text>
         </Card.Body>
     </Card>

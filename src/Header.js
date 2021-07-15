@@ -5,7 +5,9 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-        <NavigationBar />
+        <NavigationBar
+        title="Horned Beasts" 
+        className = 'navh1'/>
       </header>
     )
   }

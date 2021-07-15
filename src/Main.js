@@ -45,7 +45,7 @@ class Main extends React.Component {
 
     return (
       <main>
-        <h1> {this.props.title}</h1>
+        <h1 className = 'mainh2'> {this.props.title}</h1>
         <Container fluid>
          { this.renderGrid(elementsArr) }
         </Container>
