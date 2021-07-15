@@ -2,7 +2,11 @@
 
 ## Gallery of Horns
 
-[Site Deployed Here](https://infallible-einstein-4e0d5d.netlify.app/)
+[Netlify Site Here](https://infallible-einstein-4e0d5d.netlify.app/)
+
+[AWS Amplify Site Here](https://main.d251f0nh2tlgxb.amplifyapp.com/)
+
+
 Gallery of Horns is my first react app. It is currently deployed at the site above. The gallery displays horned creatures to the user.  The user can then select their favorites with the favorite button located on each beasts card.
 
 ### Author: Quentin P Young III
