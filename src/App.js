@@ -11,7 +11,7 @@ class App extends React.Component {
       <>
         <Header />
         <Main 
-        title = 'Horned Beasts!'
+        title = 'All Beasts'
         />
         <Footer 
         author = 'Quentin Young'/>
