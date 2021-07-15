@@ -10,6 +10,9 @@ h1{
 }
 .navh1{
   font-family: 'Zen Loop', cursive;
+  font-size: 4em;
+  color:#FFA62B;
+  font-weight:500;
 }
 #basic-nav-dropdown{
   color:#16697A;
@@ -18,11 +21,12 @@ h1{
   text-align: center;
 }
 main {
-  background-color: #82C0CC;
+
 }
 .mainh2{
   font-family: 'Encode Sans SC', sans-serif;
   font-weight: bolder;
+  color:#16697A;
 }
 
 img {
@@ -41,11 +45,19 @@ img {
 }
 
 .card img{
-  background-color: #16697aff;;
+  
 }
 
 .cardTitle{
   font-family: 'Encode Sans SC', sans-serif;
   font-weight: bold;
   color:#16697A;
+}
+
+
+footer{
+  margin-top: 5vh;
+  padding: 3vh;
+  background-color: #16697A;
+  height: 10vh;
 }

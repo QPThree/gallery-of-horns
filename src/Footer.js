@@ -1,9 +1,12 @@
 import React from 'react';
 
+
 class Footer extends React.Component {
   render(){
     return (
-      <p>Created By: { this.props.author }</p>
+      <footer bg="dark" expand = "md">
+        <p>Created By: { this.props.author }</p>
+      </footer>
     )
   }
 }

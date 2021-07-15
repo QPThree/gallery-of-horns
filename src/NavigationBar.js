@@ -8,9 +8,9 @@ class NavigationBar extends React.Component {
 
   render() {
     return (
-      <Navbar bg="light" expand = "lg">
+      <Navbar bg="dark" expand = "md">
         <Container>
-          <Navbar.Brand href="#home" className = {this.props.className}><h1 style={{fontSize: '4em'}}>{this.props.title}</h1></Navbar.Brand>
+          <Navbar.Brand href="#home" ><h1 className = {this.props.className}>{this.props.title}</h1></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <NavDropdown title="Contact Me" id="basic-nav-dropdown">
           <NavDropdown.Item href="https://github.com/QPThree">GitHub</NavDropdown.Item>
