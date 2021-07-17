@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './HornedBeast.css';
+import Data from './data.json';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
@@ -43,6 +44,8 @@ class App extends React.Component {
         <Main 
         title = 'All Beasts'
         handleShowModal = {this.handleShowModal}
+        Data = {Data}
+        
         />
         <Footer 
         author = 'Quentin Young'/>
