@@ -41,11 +41,10 @@ class Main extends React.Component {
     }
     );
 
-   
-
     return (
       <main>
         <h1 className = 'mainh2'> {this.props.title}</h1>
+        <h2 onClick={this.props.handleShowModal}>Show Modal</h2>
         <Container fluid>
          { this.renderGrid(elementsArr) }
         </Container>
