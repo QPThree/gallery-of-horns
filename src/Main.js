@@ -27,6 +27,7 @@ class Main extends React.Component {
   render() {
     const Data = this.props.Data.map((obj, index) => {
       return <HornedBeast
+
         key = { index }
         title={obj.title}
         imgUrl={obj.image_url}
@@ -35,12 +36,11 @@ class Main extends React.Component {
         horns={obj.horns} />
     }
     );
-
+    
     return (
       <main>
         <h1 className = 'mainh2'> {this.props.title}</h1>
         <h2 onClick={this.props.handleShowModal}>Show Modal</h2>
-
         <Container fluid>
          { this.renderGrid(Data) }
         </Container>

@@ -8,6 +8,7 @@ import Main from './Main';
 import Footer from './Footer';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import SelectedBeast from './SelectedBeast';
 
 class App extends React.Component {
   constructor(props){
@@ -32,20 +33,18 @@ class App extends React.Component {
       <>
         <Header />
         
-        <Modal show={this.state.showModal} >
-          <Modal.Header>
-            <Modal.Title>My Modal</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            Modal Body Here
-          </Modal.Body>
-          <Button variant = "danger" onClick={this.handleCloseModal}>Close</Button>
-        </Modal>
+       <SelectedBeast
+       showModal = {this.state.showModal}
+       handleShowModal = {this.handleShowModal}
+       setState = {this.setState}
+       handleCloseModal = {this.handleCloseModal}
+        />
         <Main 
         title = 'All Beasts'
         handleShowModal = {this.handleShowModal}
         Data = {Data}
-        
+        setState = {this.setState}
+
         />
         <Footer 
         author = 'Quentin Young'/>
