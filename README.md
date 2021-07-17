@@ -48,6 +48,18 @@ Actual time needed to complete: 2 hours (Ongoing. More can be done.)
 
 ---
 
+Feature 4 - Display a Modal
+
+Estimate of time needed to complete: 120 minutes
+
+Start time: 1:07pm 17JUL2021
+
+Finish time:
+
+Actual time needed to complete:
+
+---
+
 ### Any Links you used as reference
 ### Reflections and Comments
 
