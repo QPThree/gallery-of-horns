@@ -27,13 +27,14 @@ class Main extends React.Component {
   render() {
     const Data = this.props.Data.map((obj, index) => {
       return <HornedBeast
-
         key = { index }
         title={obj.title}
         imgUrl={obj.image_url}
         description={obj.description}
         keyword={obj.keyword}
-        horns={obj.horns} />
+        horns={obj.horns}
+        handleShowModal = {this.props.handleShowModal} 
+        setSelectedBeast = {this.props.setSelectedBeast} />
     }
     );
     

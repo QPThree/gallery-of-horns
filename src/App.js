@@ -15,6 +15,11 @@ class App extends React.Component {
     super(props);
     this.state = {
       showModal:false,
+      selectedBeast : {
+        title: "test",
+        description: "testing Description",
+        imgUrl: "Placeholder",
+      },
     }
   }
   handleShowModal = () => {
@@ -25,26 +30,39 @@ class App extends React.Component {
   handleCloseModal = () => {
     this.setState({
       showModal:false,
-      selectedBeast: {},
     });
+  }
+  setSelectedBeast = (title, description, imgUrl) => {
+    this.handleShowModal();
+    console.log(this.state.selectedBeast)
+    console.log('ran once');
+    this.setState({
+      selectedBeast: {
+        title: title,
+        description: description,
+        imgUrl : imgUrl,
+      }
+    })
   }
   render() {
     return (
       <>
         <Header />
-        
-       <SelectedBeast
-       showModal = {this.state.showModal}
-       handleShowModal = {this.handleShowModal}
-       setState = {this.setState}
-       handleCloseModal = {this.handleCloseModal}
+        <SelectedBeast
+          imgUrl = {this.state.selectedBeast.imgUrl}
+          title= {this.state.selectedBeast.title}
+          description = {this.state.selectedBeast.description}
+          showModal = {this.state.showModal}
+          handleShowModal={this.handleShowModal}
+          handleCloseModal={this.handleCloseModal}
+          setState={this.setState}
         />
         <Main 
         title = 'All Beasts'
         handleShowModal = {this.handleShowModal}
         Data = {Data}
         setState = {this.setState}
-
+        setSelectedBeast = {this.setSelectedBeast}
         />
         <Footer 
         author = 'Quentin Young'/>
