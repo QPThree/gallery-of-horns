@@ -6,8 +6,6 @@ import Data from './data.json';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
 import SelectedBeast from './SelectedBeast';
 
 class App extends React.Component {
