@@ -2,7 +2,7 @@ import React from 'react';
 // import CardColumns from 'react-bootstrap/CardColumns';
 import HornedBeast from './HornedBeast';
 import './Main.css';
-import { Container, Row, Col, Form } from 'react-bootstrap';
+import { Container, Form, CardColumns } from 'react-bootstrap';
 
 //global variables
 
@@ -14,18 +14,9 @@ class Main extends React.Component {
     };
   }
   renderGrid = (arr) => {
-    let tempArr = [];
     let finalArr = [];
     arr.forEach(obj => {
-
-      if (tempArr.length < 3) {
-        tempArr.push(<Col>{obj}</Col>);
-      }
-      else {
-        let element = <Row>{tempArr}</Row>;
-        tempArr = [];
-        finalArr.push(element);
-      }
+      finalArr.push(obj);
     });
     return finalArr;
   };
@@ -63,34 +54,35 @@ class Main extends React.Component {
           handleShowModal={this.props.handleShowModal}
           setSelectedBeast={this.props.setSelectedBeast} /> : false);
     }
+
     return (
       <main>
         <Container fluid>
-          <Row>
 
-            <Col sm="2">
-              <Form><span className="formHeader">Filters</span>
-                <Form.Group controlId="exampleForm.SelectCustom">
-                  <Form.Label className = "formLabel">Horns</Form.Label>
-                  <Form.Control as="select" custom onChange={this.handleFormSelection}>
-                    <option value="0">All</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="100">4+</option>
-                  </Form.Control>
-                </Form.Group>
-              </Form>
-            </Col>
-            
 
-            <Col sm="10">
-              <h1 className='mainh2'> {this.props.title}</h1>
-              <h2 onClick={this.props.handleShowModal}>Show Modal</h2>
-              {this.renderGrid(filteredData)}
-            </Col>
-            
-          </Row>
+
+          <Form><span className="formHeader">Filters</span>
+            <Form.Group controlId="exampleForm.SelectCustom">
+              <Form.Label className="formLabel">Horns</Form.Label>
+              <Form.Control as="select" custom onChange={this.handleFormSelection}>
+                <option value="0">All</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="100">4+</option>
+              </Form.Control>
+            </Form.Group>
+          </Form>
+
+
+
+          <h1 className='mainh2'> {this.props.title}</h1>
+          <CardColumns>
+            {this.renderGrid(filteredData)}
+
+          </CardColumns>
+
+
         </Container>
       </main>
     )
