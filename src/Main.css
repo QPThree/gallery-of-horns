@@ -6,6 +6,8 @@ Form {
   margin-top: 15vh;
   border: solid 1px #353535;
   padding: 0 2vw 0 2vw;
+  width: 25vw;
+  margin: 5vh auto 5vh auto;
   
 }
 .formHeader{
@@ -18,4 +20,8 @@ Form {
   margin-right: 1vw;
   font-size: 1em;
   color: #353535;
+}
+.contactLink{
+  text-decoration: none;
+  color:#353535;
 }

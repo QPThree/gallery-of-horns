@@ -4,8 +4,6 @@ import HornedBeast from './HornedBeast';
 import './Main.css';
 import { Container, Form, CardColumns } from 'react-bootstrap';
 
-//global variables
-
 class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -54,13 +52,9 @@ class Main extends React.Component {
           handleShowModal={this.props.handleShowModal}
           setSelectedBeast={this.props.setSelectedBeast} /> : false);
     }
-
     return (
       <main>
         <Container fluid>
-
-
-
           <Form><span className="formHeader">Filters</span>
             <Form.Group controlId="exampleForm.SelectCustom">
               <Form.Label className="formLabel">Horns</Form.Label>
@@ -73,20 +67,13 @@ class Main extends React.Component {
               </Form.Control>
             </Form.Group>
           </Form>
-
-
-
           <h1 className='mainh2'> {this.props.title}</h1>
           <CardColumns>
             {this.renderGrid(filteredData)}
-
           </CardColumns>
-
-
         </Container>
       </main>
     )
   }
 }
-
 export default Main;

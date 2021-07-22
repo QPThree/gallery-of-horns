@@ -13,6 +13,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       showModal:false,
+      showContactModal:false,
       selectedBeast : {
         title: "test",
         description: "testing Description",
@@ -30,6 +31,16 @@ class App extends React.Component {
       showModal:false,
     });
   }
+  handleShowContactModal = () => {
+    this.setState({
+      showContactModal:true,
+    });
+  }
+  handleCloseContactModal = () => {
+    this.setState({
+      showContactModal:false,
+    });
+  }
   setSelectedBeast = (title, description, imgUrl) => {
     this.handleShowModal();
     console.log(this.state.selectedBeast)
@@ -45,7 +56,10 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Header />
+        <Header 
+        showContactModal = {this.state.showContactModal}
+        handleShowContactModal = {this.handleShowContactModal}
+        handleCloseContactModal = {this.handleCloseContactModal}/>
         <SelectedBeast
           imgUrl = {this.state.selectedBeast.imgUrl}
           title= {this.state.selectedBeast.title}
