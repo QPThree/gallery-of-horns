@@ -17,13 +17,14 @@ class NavigationBar extends React.Component {
         <Container>
           <Navbar.Brand href="#home" ><h1 className={this.props.className}>{this.props.title}</h1></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Button variant="outline-success" onClick={this.handleShowContactModal}>About Me</Button>
+          <Button variant="outline-light" onClick={this.handleShowContactModal}>About Me</Button>
         </Container>
         <Modal show={this.props.showModal}>
-          <Modal.Header closeButton>
+          <Modal.Header>
             <Modal.Title>Quentin P Young III</Modal.Title>
           </Modal.Header>
           <Modal.Body>
+            <p className = "modalBody">I am a student at Code Fellow, in Seattle WA.  This is my first React application.  Reach out on linkedin and follow me on github!</p>
             <a href="https://www.linkedin.com/in/quentin-young-iii/"><span className = "contactLink">LinkedIn</span></a>
             <br></br>
             <a href="https://github.com/QPThree"><span className = "contactLink">GitHub</span></a>
