@@ -2,3 +2,20 @@ img {
   height: 500px;
   
 }
+Form {
+  margin-top: 15vh;
+  border: solid 1px #353535;
+  padding: 0 2vw 0 2vw;
+  
+}
+.formHeader{
+  font-weight: 700;
+  font-size: 1.8em;
+  color: #FFA62B;
+  font-family: 'Zen Loop', cursive;
+}
+.formLabel{
+  margin-right: 1vw;
+  font-size: 1em;
+  color: #353535;
+}
