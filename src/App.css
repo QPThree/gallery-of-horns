@@ -35,7 +35,7 @@ img {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.338);
     transition: 0.2s;
-    background-color: #ede7e3ff;
+    
 }
 .card:hover {
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.447);
