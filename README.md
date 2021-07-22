@@ -59,8 +59,20 @@ Finish time: 2:55pm 17JUL2021
 Actual time needed to complete: 1:48
 
 ---
+Feature 5 - Filter Display By Number of Horns
+
+Estimate of time needed to complete: 180 minutes
+
+Start time: 8:57pm 20JUL2021
+
+Finish time: 7:30pm 21JUL2021
+
+Actual time needed to complete: 150 minutes
+
+---
 
 ### Any Links you used as reference
+
 ### Reflections and Comments
 
 * Struggling with bootstrap.

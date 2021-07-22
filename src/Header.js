@@ -7,10 +7,12 @@ class Header extends React.Component {
       <header>
         <NavigationBar
         title="Horned Beasts" 
-        className = 'navh1'/>
+        className = 'navh1'
+        showModal = {this.props.showContactModal}
+        handleShowContactModal = {this.props.handleShowContactModal}
+        handleCloseContactModal = {this.props.handleCloseContactModal}/>
       </header>
     )
   }
 }
-
 export default Header;

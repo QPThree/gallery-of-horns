@@ -1,4 +1,36 @@
-img {
+/* img {
   height: 500px;
   
+} */
+.accordion{
+  margin: auto auto 5vh auto;
+}
+
+Form {
+  margin-top: 15vh;
+  border: solid 1px #353535;
+  padding: 0 2vw 0 2vw;
+  width: 15vw;
+  margin: 5vh auto 5vh auto;
+  
+}
+.formHeader{
+  font-weight: 700;
+  font-size: 1.8em;
+  color: #FFA62B;
+  font-family: 'Zen Loop', cursive;
+}
+.formLabel{
+  margin-right: 1vw;
+  font-size: 1em;
+  color: #353535;
+}
+.contactLink{
+  text-decoration: none;
+  color:#353535;
+}
+.modalBody{
+  font: 1em sans-serif;
+  color:#353535;
+  line-height: 1.4em;
 }
